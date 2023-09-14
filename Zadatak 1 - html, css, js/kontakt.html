@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="icon" href="img/favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img src="img/logo2.png" id="logo" />
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html"  class="inactive">Početna</a></li>
+            <li><a href="igracke.html"  class="inactive">Igračke</a></li>
+            <li><a href="upit.html"  class="inactive">Pitajte nas!</a></li>
+            <li class="active"><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main">
+
+        <h1 class="main-heading">Kontaktirajte nas</h1>
+
+        <div class="container">
+          <div class="main-tekst">
+            <p>
+              <b>Adresa</b><br>
+              Jove Ilića 154<br>
+              11000 Beograd
+            </p>
+          </div>
+
+          <div class="main-tekst">
+            <p>
+              <b>Telefon</b><br>
+              011 3285667
+            </p>
+          </div>
+
+          <div class="main-tekst">
+            <p>
+              <b>Radno vreme</b><br>
+              Radnim danom: 10:30-18:30h<br>
+              Subota: 12-17h
+            </p>
+          </div>
+        
+          <div class="main-tekst">
+            <p>
+              <b>Društvene mreže</b><br>
+              <a href="https://www.instagram.com">@instagram</a><br>
+            </p>
+          </div>
+        </div>
+
+        
+    
+      </div>
+
+      <footer class="footer">
+        <p>FON</p>
+        <p id="datum"></p>
+      </footer>
+    </div>
+    
+    <script>
+      $(".inactive").hover(
+        function(){
+          $(this).css({color:'white'});
+        },
+        function(){
+          $(this).css({color:'rgba(255,255,255,.75)'});
+        })
+    </script>
+    <script>
+      document.getElementById("datum").innerHTML = Date();
+    </script>
+  </body>
+</html>

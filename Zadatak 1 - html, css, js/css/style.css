@@ -1,0 +1,130 @@
+html {
+  background: url(../img/pozadina1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+
+}
+
+.main {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+
+}
+
+.btn{
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-left: 20px;
+    position: relative;
+    
+
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.nav > li > a{
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav > .active > a {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px){
+    
+    #logo {
+        float: left;
+    }
+    .nav {
+        float: right;
+    }
+
+    .main{
+        position: absolute;
+        top: 30%;
+    }
+}
+
+@media (min-width: 992px){
+
+    .main{
+       margin-left: 100px;
+       margin-right: 100px;
+    }
+}
+
+.hovered{
+    color:white;
+}
